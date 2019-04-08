@@ -48,3 +48,24 @@ ctaImg.src = "img/header-img.png";
 
 let middleImg = document.querySelector("#middle-img");
 middleImg.src = "img/mid-page-accent.jpg";
+
+let navigation = document.querySelectorAll("header nav a");
+navigation[0].textContent = "Services";
+navigation[1].textContent = "Product";
+navigation[2].textContent = "Vision";
+navigation[3].textContent = "Features";
+navigation[4].textContent = "About";
+navigation[5].textContent = "Contact";
+
+let title = document.querySelector(".cta-text h1");
+title.textContent = "DOM IS AWESOME";
+
+let btn = document.querySelector(".cta-text button");
+btn.textContent = "Get Started";
+
+let cTitles = document.querySelectorAll(".text-content h4");
+cTitles[0].textContent = "FEATURES";
+cTitles[1].textContent = "ABOUT";
+cTitles[2].textContent = "SERVICES";
+cTitles[3].textContent = "PRODUCT";
+cTitles[4].textContent = "VISION";
