@@ -117,4 +117,29 @@ let ctaText = document.querySelector(".cta-text");
 
 ctaText.appendChild(btn2);
 
-btn2.addEventListener("click", event => event.target.style.backgroundColor = "lightgrey");
+btn2.addEventListener("click", event => {
+  event.target.style.backgroundColor = "lightgrey";
+  event.target.textContent = "Done!";
+});
+
+let btn3 = document.createElement("button");
+btn3.textContent = "Change title";
+ctaText.appendChild(btn3);
+
+btn3.addEventListener("click", function(){
+  title.textContent = "Button works!";
+});
+
+let btn4 = document.createElement("button");
+btn4.textContent = "Change stuff";
+ctaText.appendChild(btn4);
+
+let dataObj = {
+  navColor: "red",
+  contentSize: "1.5rem"
+}
+
+btn4.addEventListener("click", () => {
+  navigation.forEach(item => item.style.color = dataObj.navColor);
+  cTitles.forEach(item => item.style.fontSize = dataObj.contentSize);
+})
