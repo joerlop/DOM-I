@@ -109,3 +109,12 @@ lastItem.style.color = "green";
 
 cTitles.forEach(item => item.style.fontSize = "2rem");
 cParagraphs.forEach(item => item.style.fontSize = "1.2rem");
+
+let btn2 = document.createElement("button");
+btn2.textContent = "Change button color";
+
+let ctaText = document.querySelector(".cta-text");
+
+ctaText.appendChild(btn2);
+
+btn2.addEventListener("click", event => event.target.style.backgroundColor = "lightgrey");
