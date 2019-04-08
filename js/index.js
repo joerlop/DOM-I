@@ -87,3 +87,20 @@ contactInfo[2].textContent = "sales@greatidea.io";
 
 let copyRight = document.querySelector("footer p");
 copyRight.textContent = "Copyright Great Idea! 2018";
+
+navigation.forEach(item => item.style.color = "green");
+
+let firstItem = document.createElement("a");
+firstItem.textContent = "Yo!";
+firstItem.href = "#";
+
+let lastItem = document.createElement("a");
+lastItem.textContent = "Live Life!";
+lastItem.href = "#";
+
+let navContainer = document.querySelector("header nav");
+navContainer.prepend(firstItem);
+navContainer.appendChild(lastItem);
+
+firstItem.style.color = "green";
+lastItem.style.color = "green";
