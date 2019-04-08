@@ -104,3 +104,8 @@ navContainer.appendChild(lastItem);
 
 firstItem.style.color = "green";
 lastItem.style.color = "green";
+
+//Stretch
+
+cTitles.forEach(item => item.style.fontSize = "2rem");
+cParagraphs.forEach(item => item.style.fontSize = "1.2rem");
