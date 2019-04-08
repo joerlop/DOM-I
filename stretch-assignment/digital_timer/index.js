@@ -55,6 +55,7 @@ btn.textContent = "Go!";
 btn.style.background = "white";
 btn.style.border = "1px solid black";
 btn.style.borderRadius = "2px";
+btn.style.fontSize = "20px";
 
 let content = document.querySelector("body");
 
@@ -64,4 +65,14 @@ content.appendChild(btn);
 
 btn.addEventListener("click", function() {
     timer();
+});
+
+btn.addEventListener("mouseenter", function(event) {
+    event.target.style.color = "grey";
+    event.target.style.border = "1px solid grey";    
+});
+
+btn.addEventListener("mouseout", function(event) {
+    event.target.style.color = "black";
+    event.target.style.border = "1px solid black";    
 });
